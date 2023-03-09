@@ -129,3 +129,18 @@ Test case #14 - R10
    expected output:
    	There should be no error with both of these tests since this procedure simply tests for whether the optional declaration list, 
    	meaning the declaration of non-parameters, are there or not, and returns true regardless because you don't need to have a declaration list.
+   	
+Test case #15 - procedure_If
+	Input: 
+		A vector of token_323 objects: vector<token_323> = {"if", "a", "<=", "b", "(", ")", "a=b", "fi", "else", "b=a"}
+
+	Expected Output:
+		Here, we test if statement, the procedure_If function will return true.
+
+
+Test case #16 - procedure_While
+	Input: 
+		A vector of token_323 objects: vector<token_323> = {"while", "a", "<=", "b", "(", ")", "a=b", "a=a+1"}
+
+	Expected Output:
+		Here, we test while statement, the procedure_while function will return true.

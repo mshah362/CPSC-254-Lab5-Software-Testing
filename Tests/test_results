@@ -105,4 +105,19 @@ Test case #13 - R9
    	The program would run fine and there are no errors triggerable since declaration lists are optional
    Why?:
    	A program only requires parameters to be declared, other variables aren't required.
+   	
+Test case #5 - procedure_If
+	Test result:
+		the procedure_If function will return true as we expected in test case.
+
+	Problem?
+		there is a problem may crash this function. If there are two or more conditions, this function would not work.
+
+
+Test case #6 - procedure_While
+	Test result:
+		the procedure_While function will return true as we expected in test case.
+
+	Problem?
+		there is a problem may crash this function. If there are two or more conditions, this function would not work.
        
