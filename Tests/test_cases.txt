@@ -80,13 +80,13 @@ Create a vector of tokens with one or more terms, and call the procedure_Express
 Output:
 procedure_Expression_q should recognize any leading + or - symbol followed by a term, generate the appropriate instruction, update rule_holder, and return true. If no symbol is found, rule_holder should be updated and the function should return true. If either procedure_Term or procedure_Expression_q return false, procedure_Expression_q should return false and print an error message. The final value of loc should be the index of the last processed token plus one.
 
-Test case #12- R26:
+Test case #12- R26.1:
 
 Input:
-Create a vector of tokens with one or more factors, and call procedure_Term with loc set to 0.
+	1.23*(y+z)
 
 Output:
-procedure_Term should call procedure_Factor and procedure_Term_q to process the input token(s) and any additional factors in the term. If both functions return true, procedure_Term should update rule_holder and return true. If either function returns false, procedure_Term should return false and print an error message. The final value of loc should be the index of the last processed token plus one.
+	Expected to pass since follows format of an arithmetic expression. However will pass if string is empty? Is this because of ϵ?
 
 Test case #13 - R9. <Body>  :: = { < Statement List> }
     input:
