@@ -144,3 +144,8 @@ Test case #16 - procedure_While
 
 	Expected Output:
 		Here, we test while statement, the procedure_while function will return true.
+Test case #17 - R20 <print> 
+	Input: put(3+4;
+	
+	Expected Output:
+		Will give an error due to missing ')'

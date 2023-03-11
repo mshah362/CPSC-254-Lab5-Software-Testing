@@ -121,3 +121,8 @@ Test case #6 - procedure_While
 	Problem?
 		there is a problem may crash this function. If there are two or more conditions, this function would not work.
        
+Test case #17 - R20 <print> 
+	Test result: 
+        The procedure_print function will return false as we expected in test case due to missing ')'
+	
+	

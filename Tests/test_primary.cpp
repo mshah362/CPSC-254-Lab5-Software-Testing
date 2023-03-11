@@ -6,38 +6,41 @@
 #include "../lexer.cpp"
 using namespace std;
 void test_Primary();
-void term_2();
+void test_term();
+void test_Print();
 int main(int argc, char *argv[])
 {
   //test_Primary();
-  term_2();
+  //test_term();
+  test_Print();
   return 0;
 }
 void test_Primary()
 {
-    std::ifstream input_file("input.txt");
+    ifstream input_file("input.txt");
+    vector<token_323> all_tokens;
+    int location = 0;
+    
     bool test_results = false;
-    std::vector<token_323> all_tokens;
-    int loc = 0;
-    int check_eof;
+    int end_file;
 
     while (!input_file.eof()) {
         all_tokens.push_back(lexer_323(input_file));
-        check_eof = input_file.peek();
-        if (check_eof == EOF) {
+        end_file = input_file.peek();
+        if (end_file == EOF) {
             break;
         }
     }
 
-    test_results = procedure_Primary(all_tokens, loc);
+    test_results = procedure_Primary(all_tokens, location);
 
     if (test_results == false) {
-        std::cout << "Failed: Testing of R28<Primary>" << std::endl;
+        cout << "Failed: Testing of R28<Primary>" << endl;
     } else {
-        std::cout << "Passed: Testing of R28<Primary>" << std::endl;
+        cout << "Passed: Testing of R28<Primary>" << endl;
     }
 
-    std::cout << "\nHere are all the tokens in the vector:" << std::endl;
+    cout << "\nHere are all the tokens in the vector:" << endl;
     for (auto token : all_tokens) {
         token.token_print_helper();
     }
@@ -47,31 +50,67 @@ void test_Primary()
     return;
 }
 
-void term_2()
+void test_Term()
 {
-    std::ifstream input_file("input.txt");
+    ifstream input_file("input.txt");
+    vector<token_323> all_tokens;
+    int location = 0;
+    
     bool test_results = false;
-    std::vector<token_323> all_tokens;
-    int loc = 0;
-    int check_eof;
+    int end_file;
 
     while (!input_file.eof()) {
         all_tokens.push_back(lexer_323(input_file));
-        check_eof = input_file.peek();
-        if (check_eof == EOF) {
+        end_file = input_file.peek();
+        if (end_file == EOF) {
             break;
         }
     }
 
-    test_results = procedure_Term_q(all_tokens, loc);
+    test_results = procedure_Term_q(all_tokens, location);
 
     if (test_results == false) {
-        std::cout << "Failed: Testing of R26.1<<Term'>" << std::endl;
+        cout << "Failed: Testing of R26.1<<Term'>" << endl;
     } else {
-        std::cout << "Passed: Testing of R26.1<Term'>" << std::endl;
+        cout << "Passed: Testing of R26.1<Term'>" << endl;
     }
 
-    std::cout << "\nHere are all the tokens in the vector:" << std::endl;
+    cout << "\nHere are all the tokens in the vector:" << endl;
+    for (auto token : all_tokens) {
+        token.token_print_helper();
+    }
+
+    input_file.close();
+
+    return;
+}
+
+void test_Print()
+{
+    ifstream input_file("input.txt");
+    vector<token_323> all_tokens;
+    int location = 0;
+    
+    bool test_results = false;
+    int end_file;
+
+    while (!input_file.eof()) {
+        all_tokens.push_back(lexer_323(input_file));
+        end_file = input_file.peek();
+        if (end_file == EOF) {
+            break;
+        }
+    }
+
+    test_results = procedure_Print(all_tokens, location);
+
+    if (test_results == false) {
+        cout << "Failed: Testing of R20. <Print> " << endl;
+    } else {
+        cout << "Passed: Testing of R20. <Print> " << endl;
+    }
+
+    cout << "\nHere are all the tokens in the vector:" << endl;
     for (auto token : all_tokens) {
         token.token_print_helper();
     }

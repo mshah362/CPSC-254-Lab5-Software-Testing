@@ -1,1 +1,1 @@
-1.23*(y+z)
+put(<"this \0 is a string">)
