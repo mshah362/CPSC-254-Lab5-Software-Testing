@@ -5,7 +5,7 @@ test case #1 - procedure_Primary:
         The program will crash since it will exceed tha amount of elements a vector<token_323> can have.
         
 test case #2 - procedure_Primary 
-    input:
+    input: 144444444444444444444444444444444444444444 + 1
     	A math operation involving a long data type over its representation value plus any other number 
     expected output:
     	The program will crash since it will exceed the amount of bits in a 64-bit sysytem 
@@ -146,6 +146,29 @@ Test case #16 - procedure_While
 		Here, we test while statement, the procedure_while function will return true.
 Test case #17 - R20 <print> 
 	Input: put(3+4;
+	
+	Expected Output:
+		Will give an error due to missing ')'
+
+Test case #18 - R20 <print> 
+	Input: put a+b);
+	
+	Expected Output:
+		Will give an error due to missing '('
+
+Test case #19 - R21 <Scan> 
+	Input: get a;
+	
+	Expected Output:
+		Will give an error due to missing '()'
+
+Test case #20 - R21 <Scan> 
+	Input: get(name,age);
+	
+	Expected Output:
+		Will pass since has list of identifiers enclosed in parentheses
+Test case #21 - R21 <Scan> 
+	Input: get(a+b;
 	
 	Expected Output:
 		Will give an error due to missing ')'

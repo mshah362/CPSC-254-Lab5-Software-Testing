@@ -1,1 +1,1 @@
-put(<"this \0 is a string">)
+get(a+b;

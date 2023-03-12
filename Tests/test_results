@@ -124,5 +124,22 @@ Test case #6 - procedure_While
 Test case #17 - R20 <print> 
 	Test result: 
         The procedure_print function will return false as we expected in test case due to missing ')'
-	
+        
+       
+Test case #18 - R20 <print> 
+	Test result: 
+        The procedure_print function will return false as we expected in test case due to missing '('
+
+Test case #19 - R21 <Scan> 
+	Test result: 
+        Failed since missing enclosed '()'
+
+Test case #20 - R21 <Scan> 
+	Test result: 
+        Passed as we expected 
+
+Test case #21 - R21 <Scan> 
+	Test result: 
+        error, expecting ), as we expected 
+
 	
