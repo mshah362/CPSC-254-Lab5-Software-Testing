@@ -1,0 +1,9 @@
+int main(int argc, char *argv[])
+{
+    int x = 5.5;
+    if(5.5 == x)
+    {
+        return true;
+    }
+    return false;
+}

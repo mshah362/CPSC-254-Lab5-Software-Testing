@@ -1,0 +1,11 @@
+int main(int argc, char *argv[])
+{
+       double a = 0.1;
+       double b = 0.2;
+       double x = a+b;
+       if (x == 0.3)
+       {
+       return true;
+       }
+    return false;
+}
