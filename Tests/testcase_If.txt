@@ -1,4 +1,2 @@
-if(a>b && c==b)
-{a=c;
-return;}
-
+if((a>b) && (b==c))
+{return true;}else{return false;}fi
