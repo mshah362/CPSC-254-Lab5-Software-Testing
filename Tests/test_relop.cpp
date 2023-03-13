@@ -9,7 +9,7 @@ void test_Relop();
 
 int main(int argc, char *argv[])
 {
-  test_If();
+  test_Relop();
   return 0;
 }
 
