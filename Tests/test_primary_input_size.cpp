@@ -1,6 +1,7 @@
 // Test the vecotr<token_323> size limit.
 // Test case #1 from test_cases.txt
-// 192153584101141163
+// compile: clang++ -std=c++17 test_primary_input_size.cpp  -o input_size_test
+// run: ./input_size_test
 
 #include <cstdio>
 #include <iostream>
