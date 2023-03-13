@@ -30,12 +30,13 @@ void test_If()
         }
     }
 
+
     test_results = procedure_If(all_tokens, location);
 
     if (test_results == false) {
-        cout << "Failed: Testing of R13<IF>" << endl;
+        cout << "Failed: Testing of R18<IF>" << endl;
     } else {
-        cout << "Passed: Testing of R13<IF>" << endl;
+        cout << "Passed: Testing of R18<IF>" << endl;
     }
 
     cout << "\nHere are all the tokens in the vector:" << endl;
