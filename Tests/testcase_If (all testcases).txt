@@ -1,0 +1,40 @@
+Statement for compound
+    1. if(a==b)return;
+    2. if(a==b){return; a=b;}
+    3. if(a==b){a=c;}
+
+Statement for (nested) if
+    1. if(a==b) if(b>c) a=1;
+    2. if(a==b){if(b>c) return;}
+
+Statement for print
+    1. if(a==b)print(x);
+
+Statement for scan
+    1. if(a==b)get(x);
+
+Statement for put
+    1. If(a==b)put(x);
+
+Statement for while
+    1. if(a==b)while(a==c)return;
+
+with else statement
+Statement for compound
+    1. if(a==b){return true;}else{return false;}
+    2. if(a==b){return;a=c;}else{return false;}
+
+statement for assign
+    1. if(a==b){a=c;}else{b=c;}
+
+Statement for (nested) if
+    1. if(a==b){return false;}else{if(a>c)return true;}
+
+Statement for print
+    1. If(a==b){put(x);}else{put(y);}
+
+Statement for scan
+    1. if(a==b){get(x);}else{get(y);}
+
+statement for while
+    1. if(a==b){while(b>c)b=1;}else{while(c>d)c=1;}
