@@ -1,0 +1,15 @@
+Validable
+    1. while(a == true) return;
+    2. while(a != b) return;
+    3. while(a != true) put(y);
+    4. while(a == true) get(x);
+    5. while(a == true) a=b;
+    6. while(a == true) return false;
+    7. while(a == true) while(b == true) return;
+    8. while(a >= b) {a=1; return true;}
+    9. while(a == true)if(a>b)return;
+
+Invalidable
+    1. while(a==b || a==c)return;
+    2. while()return;
+    3. while(a==b)
